@@ -2,6 +2,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.container-fluid {
+.page.container-fluid {
   max-width: 850px;
+}
+
+.table.container-fluid {
+  width: 80%;
+}
+
+a.customLink, a.customLink:link, a.customLink:hover, a.customLink:visited, a.customLink:active {
+  text-decoration: none;
 }

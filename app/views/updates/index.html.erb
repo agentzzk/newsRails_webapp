@@ -1,1 +1,21 @@
-<h1>hello world</h1>
+<h1 class = "text-center">Latest Updates</h1>
+<hr/>
+<div class = "table container-fluid">
+  <div class="list-group">
+  
+  <% @updates.each do |update| %>  
+  <%= link_to "", class: "list-group-item" do %>
+  <div>
+    <h3 class="list-group-item-heading"><%= update.title %></h3>
+    <p class="list-group-item-text"><%= update.details %></p>
+  </div>
+  <% end %>
+  <% end %>
+  
+  </div>
+</div>
+
+  <!--Make the links below switch between login or logout based on session id-->
+<p class="lead text-center"><%= link_to "Admin Login", '', class: "customLink" %></p>
+<p class = "text-center">or</p>
+<p class="lead text-center"><%= link_to "Logout", '', class: "customLink" %></p>

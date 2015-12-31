@@ -1,3 +1,3 @@
-class Update < ActiveRecord::Bases
+class Update < ActiveRecord::Base
   
 end
