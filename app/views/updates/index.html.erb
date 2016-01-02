@@ -7,7 +7,7 @@
   <%= link_to update_path(update), class: "list-group-item" do %>
   <div>
     <h3 class="list-group-item-heading"><%= update.title %></h3>
-    <p class="list-group-item-text subtext lead"><%= truncate(update.details, length: 100, separator: ' ') %></p>
+    <p class="list-group-item-text subtext lead"><%= truncate(update.details, length: 70, separator: ' ') %></p>
   </div>
   <% end %>
   <% end %>
