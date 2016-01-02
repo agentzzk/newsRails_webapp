@@ -6,10 +6,32 @@
   max-width: 850px;
 }
 
-.table.container-fluid {
-  width: 80%;
-}
-
 a.customLink, a.customLink:link, a.customLink:hover, a.customLink:visited, a.customLink:active {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        font-size:20px;
+    }
+    
+    .table.container-fluid {
+      width: 80%;
+    }
+}
+ 
+@media screen and (max-width: 568px) {
+    .lead {
+        font-size:1.3em;
+    }
+    
+    .table.container-fluid {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .table.container-fluid {
+      width: 80%;
+    }
 }

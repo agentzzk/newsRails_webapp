@@ -1,0 +1,10 @@
+<div class="task_nav">
+  <%= link_to "Back", updates_path, class: "btn btn-default" %>
+</div>
+<h1 class = "text-center"><%= @update.title %></h1>
+<hr/>
+<div class = "table container-fluid">
+  <p> 
+    <%= simple_format(@update.details, class: "lead") %>
+  </p>
+</div>
