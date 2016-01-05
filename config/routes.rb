@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   
   resources :updates
   
+  namespace :api do  
+  resources :updates, :admins
+  end  
+  
 end
