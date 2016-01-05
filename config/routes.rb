@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   
   resources :updates
   
-  namespace :api do  
-  resources :updates, :admins
-  end  
+  #API call: HTTP GET json data
+  namespace :api do
+    namespace :v1 do
+      get '/admins/:username', to: "admins#show"
+    end
+  end
   
 end
